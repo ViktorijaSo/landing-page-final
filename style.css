@@ -15,8 +15,9 @@ header {
     max-width: 1128px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
-    padding-top: 63px;
+    padding: 24px 25px;
 }
 
 header a {
@@ -38,9 +39,32 @@ header nav a {
     color: #FFFFFF;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+header nav .download img {
+    vertical-align: middle;
+}
+
+/*header nav .download {
+    margin-left: 30px;
+}
+
+header nav .twitter {
+    margin-left: 26px;
+}
+
+header nav .facebook,
+header nav .instagram {
+    margin-left: 24px;
+}
+
 .text-and-link h1 {
     margin: 0;
-}
+}*/
 
 .text-and-link {
     /*padding: 124px 819px 0 72px;*/
