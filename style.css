@@ -62,6 +62,11 @@ header nav .instagram {
     margin-left: 24px;
 }
 
+header .icon-burger {
+    margin-left: auto;
+    display: none;
+}
+
 .text-and-link h1 {
     margin: 0;
 }
@@ -117,3 +122,40 @@ header nav .instagram {
     border-radius: 6px;
     position: relative;
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  @media only screen and (max-width: 540px /*425px*/) {
+    header .icon-burger {
+        display: initial;
+    }
+      header nav {
+          display: none;
+          position: fixed;
+          top: 55px;
+          right: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          background: rgba(0, 0, 0, 0.603);
+      }
+
+      header nav .components {
+          margin: 5px 5px 5px 25px;
+      }
+
+      header nav .download,
+      header nav .twitter,
+      header nav .facebook,
+      header nav .instagram {
+       margin-left: 5px;
+       margin-bottom: 5px;
+      }
+
+      header nav.open {
+          display: flex;
+      }
+  }
