@@ -1,17 +1,19 @@
 body {
     margin: 0;
+    background-color:#E5E5E5;
 }
 
-.city-background {
+header {
     background: url(background-city.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-header {
+.upper-menu {
     max-width: 1128px;
     display: flex;
     justify-content: space-between;
@@ -20,7 +22,7 @@ header {
     padding: 24px 25px;
 }
 
-header a {
+.upper-menu a {
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
@@ -30,7 +32,15 @@ header a {
     color: #FFFFFF;
 }
 
-header nav a {
+.upper-menu a:hover {
+    color: #ffffffab;
+}
+
+.upper-menu a:hover svg path {
+    fill: #ffffffab;
+}
+
+.upper-menu nav a {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -39,30 +49,30 @@ header nav a {
     color: #FFFFFF;
 }
 
-/*header nav {
+/*.upper-menu nav {
     display: flex;
     justify-content: space-between;
     width: 40%;
 }*/
 
-header nav .download img {
+.upper-menu nav .download img {
     vertical-align: middle;
 }
 
-header nav .download {
+.upper-menu nav .download {
     margin-left: 30px;
 }
 
-header nav .twitter {
+.upper-menu nav .twitter {
     margin-left: 26px;
 }
 
-header nav .facebook,
-header nav .instagram {
+.upper-menu nav .facebook,
+.upper-menu nav .instagram {
     margin-left: 24px;
 }
 
-header .icon-burger {
+.upper-menu .icon-burger {
     margin-left: auto;
     display: none;
 }
@@ -72,10 +82,12 @@ header .icon-burger {
 }
 
 .text-and-link {
-    /*padding: 124px 819px 0 72px;*/
+    padding: 124px 0px 0 72px;
+    /*max-width: 549px;*/
 }
 
 .text-and-link h1 {
+    max-width: 530px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -85,6 +97,7 @@ header .icon-burger {
 }
 
 .text-and-link div {
+    max-width: 549px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -100,6 +113,10 @@ header .icon-burger {
     box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
     border-radius: 3px;
     padding: 23.5px 31.865px 15.5px 33.868px;
+    display: inline-block;
+    /*width: 179px;
+    height: 54px;
+    text-align: center;*/
 
     text-decoration: none;
     font-family: Roboto;
@@ -115,25 +132,46 @@ header .icon-burger {
 }
 
 .white-block {
-    margin: 30px;
+    margin: 0px 30px;
     height: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
     border-radius: 6px;
     position: relative;
+    top: -87px;
 }
 
 @media only screen and (max-width: 768px) {
-    header {
+    .upper-menu {
       background: rgba(0, 0, 0, 0.4);
+    }
+
+    .text-and-link {
+        padding: 107px 0px 0 24px;
+        /*width: 100%;*/
+    }
+
+    .text-and-link h1 {
+        max-width: 648px;
+    }
+
+    .text-and-link div {
+        max-width: 716px;
+        margin-top: 8px;
+        margin-bottom: 43px;
+    }
+
+    .white-block {
+        top: -62px;
+        margin: 0 10px 0 10px;
     }
   }
 
   @media only screen and (max-width: 540px /*425px*/) {
-    header .icon-burger {
+    .upper-menu .icon-burger {
         display: initial;
     }
-      header nav {
+    .upper-menu nav {
           display: none;
           position: fixed;
           top: 55px;
@@ -143,19 +181,38 @@ header .icon-burger {
           background: rgba(0, 0, 0, 0.603);
       }
 
-      header nav .components {
+      .upper-menu nav .components {
           margin: 5px 5px 5px 25px;
       }
 
-      header nav .download,
-      header nav .twitter,
-      header nav .facebook,
-      header nav .instagram {
+      .upper-menu nav .download,
+      .upper-menu nav .twitter,
+      .upper-menu nav .facebook,
+      .upper-menu nav .instagram {
        margin-left: 5px;
        margin-bottom: 5px;
       }
 
-      header nav.open {
+      .upper-menu nav.open {
           display: flex;
       }
+
+      .text-and-link {
+        padding: 112px 0px 0 15px;
+        /*width: 100%;*/
+    }
+
+    .text-and-link h1 {
+        max-width: 345px;
+    }
+
+    .text-and-link div {
+        max-width: 383px;
+        margin-top: 9px;
+        margin-bottom: 42px;
+    }
+      .white-block {
+        top: -54px;
+    }
+  }
   }
