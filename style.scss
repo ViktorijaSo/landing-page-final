@@ -1,0 +1,240 @@
+/*.upper-menu nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}*/
+/* WHITE BLOCK */
+/*425px*/
+/*}*/
+/* FOOTER */
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+header {
+  background: url(background-city.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.upper-menu {
+  max-width: 1128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 24px 25px;
+  a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    &:hover {
+      color: #ffffffab;
+      svg {
+        path {
+          fill: #ffffffab;
+        }
+      }
+    }
+  }
+  nav {
+    a {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #ffffff;
+    }
+    .download {
+      img {
+        vertical-align: middle;
+      }
+      margin-left: 30px;
+    }
+    .twitter {
+      margin-left: 26px;
+    }
+    .facebook {
+      margin-left: 24px;
+    }
+    .instagram {
+      margin-left: 24px;
+    }
+  }
+  .icon-burger {
+    margin-left: auto;
+    display: none;
+  }
+}
+.text-and-link {
+  h1 {
+    margin: 0;
+    max-width: 530px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53.2px;
+    line-height: 62px;
+    color: #ffffff;
+  }
+  padding: 124px 0px 0 72px;
+  div {
+    max-width: 549px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.2px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 11px;
+    margin-bottom: 42px;
+  }
+  a {
+    background: #f44336;
+    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+    border-radius: 3px;
+    padding: 23.5px 31.865px 15.5px 33.868px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    svg {
+      vertical-align: middle;
+    }
+  }
+}
+.white-block {
+  margin: 0px 30px;
+  height: 700px;
+  background: #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+  margin-top: -87px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 30px;
+  .footer__container--black {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 0.875em;
+    text-decoration: none;
+    margin-right: 33px;
+    color: #000000;
+  }
+  .footer__container--grey {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 0.875em;
+    text-decoration: none;
+    margin-right: 33px;
+    color: #333333;
+  }
+  span {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.625em;
+    line-height: 0.6875em;
+    color: #333333;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .upper-menu {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .text-and-link {
+    padding: 107px 0px 0 24px;
+    h1 {
+      max-width: 648px;
+    }
+    div {
+      max-width: 716px;
+      margin-top: 8px;
+      margin-bottom: 43px;
+    }
+  }
+  .white-block {
+    top: -62px;
+    margin: 0 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .upper-menu {
+    .icon-burger {
+      display: initial;
+    }
+    nav {
+      display: none;
+      position: fixed;
+      top: 55px;
+      right: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      background: rgba(0, 0, 0, 0.603);
+      .components {
+        margin: 5px 5px 5px 25px;
+      }
+      .download {
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+      .twitter {
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+      .facebook {
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+      .instagram {
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    nav.open {
+      display: flex;
+    }
+  }
+  .text-and-link {
+    padding: 112px 0px 0 15px;
+    h1 {
+      max-width: 345px;
+    }
+    div {
+      max-width: 383px;
+      margin-top: 9px;
+      margin-bottom: 42px;
+    }
+  }
+  .white-block {
+    top: -54px;
+  }
+}
+@media only screen and (max-width: 587px) {
+  .footer__container {
+    margin-left: 40px;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
